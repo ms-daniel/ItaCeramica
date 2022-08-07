@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+body {
+    background-color: lightblue;
+    font-family: 'Open Sans', Italic, monospace;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+h2{
+    font-size: 24pt;
+    color: darkred;
+}
+
+img{
+    padding-bottom: 15px;
+}
+
+nav a{
+    color: white;
+    background-color: black;
+    border-style: groove;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    margin-right: 20px;
+}
+
+nav a:hover{
+    font-size: large;
+    color: white;
+    background-color: black;
+    border-style: groove;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    margin-right: 20px;
+}
