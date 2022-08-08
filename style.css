@@ -6,11 +6,6 @@ body {
     margin: 0;
 }
 
-#corpo{
-    /*padding-top: 1%;
-    padding-right: 5%;
-    padding-left: 5%;*/
-}
 
 /*todo o "nav" do site*/
 header{
@@ -19,6 +14,7 @@ header{
     width: 100%;
     display: inline-flex;
     flex-direction: row;
+    margin: 0;
 }
 
 .ladoDireito{
@@ -26,19 +22,21 @@ header{
     margin-left: 5%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
     width: 100%;
 }
 
 #divBusca{
-    width: 60%;
-    height: 32px;
+    width: 70%;
+    height: 30%;
     box-sizing: border-box;
     color: rgb(34, 32, 32);
     text-align: left;
     border: 1px solid rgb(238, 238, 240);
     border-radius: 8px;
     font-size: 16px;
-    padding: 0px;
+    padding: 0%;
     display: inline-flex;
 }
 
@@ -46,37 +44,34 @@ header{
     background-color: transparent;
     padding-left: 5px;
     font-style: italic;
-    font-size: 18px;
+    font-size: 90%;
     border: none;
-    height: 30px;
+    height: 100%;
     width: 90%;
     margin: 0px;
 }
 
 #botaoBuscar{
     border-radius: 0px 8px 8px 0px;
-    margin: -0.2%;
-    padding: 2px;
+    padding: 0;
     background-color: rgb(65, 160, 23);
-    width: 50px;
-    height: 32px;
-    float: right;
+    width: 10%;
+    height: 100%;
+    margin: 0%;
+    font-size: 80%;
 }
 
-
-#menu{
-    display: inline-flex;
+nav{
+    width: 100%;
+    padding: 0;
 }
 
 nav a{
-    margin-left: 3%;
-    margin-top: 1%;
-    margin-right: 5%;
     color: white;
+    text-decoration: none;
     display: inline-flex;
     flex-wrap: wrap;
-    text-decoration: none;
-    right: 50%;
+    margin: 2% 5% 0 5%;
 }
 
 
@@ -93,19 +88,23 @@ nav a:hover{
 #logo{
     position: absolute;
     left: 1%;
-    top: 8%;
-    width: 200px;
+    top: 5%;
+    width: 15%;
     height: auto;
 }
 
+
 #linhaInferior{
     position: relative;
-    margin-top: -4vh;
     text-align: center;
     color: white;
     width: 100%;
     height: auto;
     background: rgb(65, 160, 23);
+}
+
+#linhaInferior p,span{
+    margin: -1% 0 0 0;
 }
 
 #linhaInferior span{
@@ -121,6 +120,7 @@ nav a:hover{
     text-align: center;
     justify-content: center;
 }
+
 #aviso img{
     align-self: center;
     width: 10%;
