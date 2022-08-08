@@ -1,42 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 
 body {
-    background-color: lightblue;
+    background-color: white;
     font-family: 'Open Sans', Italic, monospace;
-    text-align: center;
-    padding-top: 1%;
+    margin: 0;
+}
+
+#corpo{
+    /*padding-top: 1%;
     padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 5%;*/
 }
 
-h2{
-    font-size: 24pt;
-    color: darkred;
+/*todo o "nav" do site*/
+header{
+    background-color: #00263a;
+    flex-direction: column;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
 }
 
-img{
-    padding-bottom: 15px;
+.ladoDireito{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#divBusca{
+    width: 60%;
+    height: 32px;
+    box-sizing: border-box;
+    color: rgb(34, 32, 32);
+    text-align: left;
+    border: 1px solid rgb(238, 238, 240);
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0px;
+    display: inline-flex;
+}
+
+#txtBusca{
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 30px;
+    width: 90%;
+    margin: 0px;
+}
+
+#botaoBuscar{
+    border-radius: 0px 8px 8px 0px;
+    margin: -0.2%;
+    padding: 2px;
+    background-color: rgb(65, 160, 23);
+    width: 50px;
+    height: 32px;
+    float: right;
+}
+
+
+#menu{
+    display: inline-flex;
 }
 
 nav a{
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-right: 5%;
     color: white;
-    background-color: black;
-    border-style: groove;
-    border-radius: 10px;
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
     text-decoration: none;
-    padding: 5px 5px 5px 5px;
-    margin-right: 20px;
+    right: 50%;
 }
 
+
 nav a:hover{
-    font-size: large;
+    color: #41A017;
+}
+
+#fundo{
+    position: relative;
+    width: 23%;
+    height: auto;
+}
+
+#logo{
+    position: absolute;
+    left: 1%;
+    top: 8%;
+    width: 200px;
+    height: auto;
+}
+
+#linhaInferior{
+    position: relative;
+    margin-top: -4vh;
+    text-align: center;
     color: white;
-    background-color: black;
-    border-style: groove;
-    border-radius: 10px;
-    display: inline-block;
-    text-decoration: none;
-    padding: 5px 5px 5px 5px;
-    margin-right: 20px;
+    width: 100%;
+    height: auto;
+    background: rgb(65, 160, 23);
+}
+
+#linhaInferior span{
+    color: #346319;
+}
+
+#aviso {
+    margin-top: 1%;
+    width: 100%;
+    color: white;
+    background: linear-gradient(90deg, rgb(120, 189, 31) 70%, rgb(0, 130, 0) 30%);
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+}
+#aviso img{
+    align-self: center;
+    width: 10%;
+    height: 10%;
+    margin-left: 2%;
+}
+#aviso div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    text-align: center;
 }

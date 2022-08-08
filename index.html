@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang = "pt-br">
 
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 	<title>ItaCerâmica</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel = "stylesheet" href="style.css">
 </head>
 
 <body>
 	<!-- "cabeçalho" -->
-	<header> <!-- !!! pesquisar onde fica o header e o footer e colocar imagem aqui no header-->
-		<img src="resources/logo.jpg">
-	
-	
+	<header>
+		<!--<img id = "fundo" src = "resources/barra.webp">-->
+		<img id = "fundo" src = "resources/barra.webp">
+		<a href = "index.html"><img id = "logo" src = "resources/logo.webp"></a>
+
+		<div class = "ladoDireito">
+			<div id = "divBusca">
+				<input type = "text" id = "txtBusca" placeholder = "Digite aqui..."/>
+				<button type = "submit" id = "botaoBuscar" value = "Buscar"> Buscar </button>
+			</div>
+
+
 		<!-- Menu de navegação -->
-		<nav id="home">
-			<a href="#home">
-						Início
-			</a>
-
-			<a href="#produtos">
-				Produtos
-			</a>
-
-			<a href="contate.html">
+			<nav id = "menu">
+				<a href = "#home">
+					Início
+				</a>
+				<a href = "#produtos">
+					Produtos
+				</a>
+				<a href = "contate.html">
 					Contate-nos
-			</a>
-
-			<a href="#">
+				</a>
+				<a href = "#">
 					Sobre nós
-			</a>
-
-		</nav>
+				</a>
+			</nav>
+		</div>
 	</header>
-	<br>
-	<hr>
-	<br>
-
+	<div id = "linhaInferior">
+		<p>Compre também pelo nosso<span id = "whatsapp"> whatsapp </span> e recebe em casa! | 011-86-155-5555-5555</p>
+	</div>
 	
 	<!-- Corpo -->
-	<div id="corpo">
-		<h2><b>ATENÇÃO!</b></h2>
-		<p>
-			Quer construir ou reformar?<br>
-			A ItaCerâmica é o lugar! Vem comprar com a gente.<br>
-			Temos alta variedade em preços e desginers para todo bolso e rosto!
-		</p>
+	<div id = "corpo">
+		<div id = "aviso">
+			<div>
+				<p>
+					<h2>ATENÇÃO!</h2>
+					Quer construir ou reformar?<br>
+					A ItaCerâmica é o lugar! Vem comprar com a gente. Temos<br>
+					alta variedade em preços e desginers para todo bolso e rosto!
+				</p>
+			</div>
+			<img src = "resources/atencao.webp">
+		</div>
 		
 		<br>
 		<hr>
