@@ -132,6 +132,10 @@ nav a:hover{
     flex-direction: column;
 }
 
+#produtos{
+    text-align: center;
+}
+
 footer{
     text-align: center;
 }
