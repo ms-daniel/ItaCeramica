@@ -9,27 +9,29 @@ body {
 
 /*todo o "nav" do site*/
 header{
-    background-color: #00263a;
+    background: linear-gradient(225deg, rgb(0,38,58) 80%, rgb(255,255,255) 20%);
+    box-shadow: 0px 1px 2px black;
     flex-direction: column;
     width: 100%;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 
 .ladoDireito{
     margin-top: 2%;
-    margin-left: 5%;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 #divBusca{
-    width: 70%;
-    height: 30%;
+    width: 50%;
+    height: 32px;
     box-sizing: border-box;
     color: rgb(34, 32, 32);
     text-align: left;
@@ -64,6 +66,7 @@ header{
 nav{
     width: 100%;
     padding: 0;
+    margin: 0;
 }
 
 nav a{
@@ -71,7 +74,7 @@ nav a{
     text-decoration: none;
     display: inline-flex;
     flex-wrap: wrap;
-    margin: 2% 5% 0 5%;
+    margin: 2% 5% 0% 5%;
 }
 
 
@@ -86,25 +89,29 @@ nav a:hover{
 }
 */
 #logo{
-    position: absolute;
-    left: 1%;
-    top: 5%;
     width: 15%;
+    align-self: center;
+}
+#logo img{
+    width: 100%;
     height: auto;
+    margin-left: 5%;
 }
 
 
 #linhaInferior{
-    position: relative;
     text-align: center;
+    align-self: center;
     color: white;
     width: 100%;
-    height: auto;
+    height: 60px;
+    margin: 0%;
     background: rgb(65, 160, 23);
+    padding-top: 0.02px;
 }
 
 #linhaInferior p,span{
-    margin: -1% 0 0 0;
+    font-size: 13pt;
 }
 
 #linhaInferior span{
@@ -113,9 +120,10 @@ nav a:hover{
 
 #aviso {
     margin-top: 1%;
+    margin-bottom: 5%;
     width: 100%;
     color: white;
-    background: linear-gradient(90deg, rgb(120, 189, 31) 70%, rgb(0, 130, 0) 30%);
+    background: linear-gradient(90deg, rgb(120, 189, 31) 20%, rgb(0, 130, 0) 80%);
     display: inline-flex;
     text-align: center;
     justify-content: center;
@@ -132,10 +140,213 @@ nav a:hover{
     flex-direction: column;
 }
 
-#produtos{
+#tituloPrincipal{
+    width: 100%;
     text-align: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(90deg, rgb(0, 130, 0) 2%, rgb(120, 189, 31) 51%);
 }
+
+#containerProdutos{
+    width: 100%;
+}
+#containerProdutos h2{
+    align-items: center;
+    text-align: left;
+    margin-left: 8%;
+    margin-bottom: 0;
+}
+
+.produtos{
+    justify-content: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.produtos a{
+    color: black;
+    text-decoration: none;
+    width: 20%;
+    border: 1px solid rgb(100, 100, 100);
+    background-color: white;
+    border-bottom: #41A017 3px solid;
+    text-align: center;
+    margin: 4px;
+    align-items: baseline;
+    text-align: left;
+}
+
+.produtos a:hover{
+    box-shadow: 0px 0px 2px black;
+}
+
+.produtos a:visited{
+    color: black;
+}
+
+.produtos a:active{
+    color:rgb(65, 160, 23);
+}
+
+.produtos p{
+    margin: 0% 0% 0% 2%;
+    vertical-align: baseline;
+    font-size: 10pt;
+}
+
+#codigoProduto{
+    font-size: 8pt;
+    margin-left: 2%;
+}
+
+.produtos img{
+    width: 100%;
+    height: auto;
+    margin: 0%;
+}
+
+#estrelas{
+    font-size: 12pt;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(247, 247, 1);
+    text-shadow: 0px 0px 1px black;
+}
+
+#estrelas span{
+    font-size: 8pt;
+    color: black;
+}
+
+#preco{
+    background: rgb(248, 204, 28);
+    margin: 10px 0 0 0;
+    padding-left: 2%;
+    color: rgb(180, 42, 39);
+    font-size: 14pt;
+}
+
+#preco span{
+    color: black;
+    font-size: 10pt;
+}
+#precoAntigo{
+    text-decoration: line-through;
+}
+
+#paginaProduto{
+    margin: 5%;
+    padding-top: 2%;
+    background-color: #dddddd;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#paginaProduto img{
+    width: 200px;
+    height: fit-content;
+    margin-right: 2%;
+}
+
+#paginaProduto div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#paginaProduto h2{
+    margin: 0;
+}
+#paginaProduto span{
+    margin: 0;
+}
+
+#paginaProduto button{
+    width: 80px;
+    height: auto;
+    align-self: center;
+    font-size: 11pt;
+    border: 1px solid black;
+    border-bottom: 2px solid #41A017 ;
+    background: rgb(253, 253, 253);
+}
+
+#paginaProduto button:hover{
+   box-shadow: 0px 0px 2px black;
+}
+
+#paginaPreco{
+    margin: 0;
+    color: rgb(223, 56, 43);
+    font-size: 15pt;
+}
+#paginaPreco span{
+    color: rgb(223, 56, 43);
+    font-size: 11pt;
+    text-decoration: line-through;
+}
+.backgroundContate{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0.02%;
+    background-image: url(resources/background-contatenos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formulario{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#formulario fieldset{
+    background-color: white;
+}
+
+#formulario legend{
+    text-shadow: 0px 0px 10px white;
+}
+
+#formulario button{
+    width: 80px;
+    height: auto;
+    align-self: center;
+    font-size: 11pt;
+    border: 1px solid black;
+    border-bottom: 2px solid #41A017 ;
+    background: rgb(253, 253, 253);
+}
+
+#formulario button:hover{
+    box-shadow: 0px 0px 2px black;
+}
+
+
 
 footer{
     text-align: center;
+    width: 100%;
+    height: auto;
+    color: white;
+    background: linear-gradient(90deg, rgb(120, 189, 31) 20%, rgb(0, 130, 0) 80%);
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0.02px;
+    border-top: 1px solid black;
 }

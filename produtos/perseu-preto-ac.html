@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <title>ItaCerâmica - Contate-nos</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ItaCerâmica</title>
+	<link rel="stylesheet" href="../style.css">
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">-->
 </head>
 
-<body bgcolor="gray">
-    <center>
-    <!-- "cabeçalho" -->
-	<header> <!-- !!! pesquisar onde fica o header e o footer e colocar imagem aqui no header-->
-		<img src="../resources/logo.jpg">
+<body>
+	<!-- "cabeçalho" -->
+	<header>
+		<!--<img id="fundo" src="resources/barra.webp">
+		<img id="fundo" src="resources/barra.webp">-->
+		<a href="index.html" id="logo"><img src="../resources/logo.webp"></a>
+
+		<div class="ladoDireito">
+			<div id="divBusca">
+				<input type="text" id="txtBusca" placeholder="Digite aqui..."/>
+				<button type="submit" id="botaoBuscar" value="Buscar"> Buscar </button>
+			</div>
+
+
+		<!-- Menu de navegação -->
+			<nav id="menu">
+				<a href="../index.html">
+					Início
+				</a>
+				<a href="../index.html#containerProdutos">
+					Produtos
+				</a>
+				<a href="../contate.html">
+					Contate-nos
+				</a>
+				<a href="#">
+					Sobre nós
+				</a>
+			</nav>
+		</div>
 	</header>
-	
-	<!-- Menu de navegação -->
-	<nav id="home">
-		<table>
-			<tr>
-				<th>
-					<a href="../index.html">Início</a> &nbsp&nbsp&nbsp&nbsp
-				</th>
-				<th>
-					<a href="../index.html#produtos">Produtos</a> &nbsp&nbsp&nbsp&nbsp
-				</th>
-				<th>
-					<a href="../contate.html">Contate-nos</a> &nbsp&nbsp&nbsp&nbsp
-				</th>
-				<th>
-					<a href="#">Sobre nós</a>
-				</th>
-			</tr>
-		</table>
-
-	<br>
-	<hr>
-	<br>
-
-	<h1>PERSEU PRETO AC</h1>
-    <span>45x90cm</span><br>
-    <img src="../resources/perseu-preto-ac.jpg" alt="ceramica2.2"><br>
-
-    <p> 
-		
-    </p>
+	<div id="linhaInferior">
+		<p>Compre também pelo nosso<span id="whatsapp"> whatsapp </span> e recebe em casa! | 011-86-155-5555-5555</p>
+	</div>
     
-    <button type="submit" value="Submit">Comprar</button> <br><br>
+	<div id="paginaProduto">
+		<img src="../resources/perseu-preto-ac.jpg" alt="ceramica2.2"><br>
+		<div>
+			<h2>PERSEU PRETO AC</h2>
+			<span>45x90cm</span><br>
+			<p id="paginaPreco">
+				R$327,95/cada<br>
+				<span>R$299,92/cada</span>
+			</p>
+			<p> 
+				<span>Descrição:</span><br>
+			</p>
+			
+			<button type="submit" value="Submit">Comprar</button> <br><br>
+		</div>
+	</div>
 
     <br>
 	<hr>
@@ -56,6 +73,5 @@
 			Copyright 2022 &copy; ItaCerâmica LTDA • Todos os direitos reservados.<br>
 			<a href="">Termos de Uso e Política de Privacidade</a> | <a href="">Preferências de Cookies</a>
 		</p>
-	</center>	
 </footer>
 </html>
