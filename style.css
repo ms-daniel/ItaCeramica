@@ -131,9 +131,10 @@ nav a:hover{
 }
 
 #aviso {
-    margin-top: 1%;
-    margin-bottom: 5%;
+    position: relative;
+    margin: 5% 0 0 0;
     width: 100%;
+    height: auto;
     color: white;
     background: linear-gradient(90deg, rgb(120, 189, 31) 20%, rgb(0, 130, 0) 80%);
     display: flex;
@@ -146,8 +147,7 @@ nav a:hover{
     align-self: center;
     width: 80px;
     height: auto;
-    margin-top: 0;
-    margin-left: 2%;
+    margin-bottom: 15px;
 }
 #aviso div{
     margin: 0;
