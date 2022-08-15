@@ -181,7 +181,7 @@ nav a:hover{
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    margin: 0 10% 0 10%;
+   margin: 0 10% 0 10%;
 }
 
 .produtos a{
@@ -409,10 +409,6 @@ footer{
         align-self: center;
         margin-top: 15px;
     }
-    #logo img{
-
-    }
-
     .ladoDireito{
         width: 100%;
     }
