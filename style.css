@@ -22,6 +22,11 @@ header{
     flex-direction: row;
 }
 
+h1{
+    font-size: 10pt;
+    text-shadow: 1px 1px 2px black;
+}
+
 .ladoDireito{
     margin-top: 2%;
     margin-left: 0;
@@ -113,13 +118,12 @@ nav a:hover{
 
 #linhaInferior{
     text-align: center;
-    align-self: center;
     color: white;
     width: 100%;
     height: 60px;
-    margin: 0%;
+    margin: 0;
     background: rgb(65, 160, 23);
-    padding-top: 0.02px;
+    padding: 10px 0 10px 0;
 }
 
 #linhaInferior p,span{
@@ -260,7 +264,7 @@ nav a:hover{
     background: rgb(248, 204, 28);
     margin: 0;
     padding-left: 2%;
-    
+    vertical-align: bottom;
 }
 
 #preco p{
@@ -437,4 +441,21 @@ footer{
     #linhaInferior span{
         color: #346319;
     }
+}
+
+@media only screen and (max-width: 476px){
+    nav a{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #linhaInferior{
+        display: none;
+    }
+    #divBusca{
+        width: 90%;
+    }
+    
 }
