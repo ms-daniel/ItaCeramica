@@ -136,20 +136,32 @@ nav a:hover{
     width: 100%;
     color: white;
     background: linear-gradient(90deg, rgb(120, 189, 31) 20%, rgb(0, 130, 0) 80%);
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
 }
 
 #aviso img{
     align-self: center;
-    width: 10%;
-    height: 10%;
+    width: 80px;
+    height: auto;
+    margin-top: 0;
     margin-left: 2%;
 }
 #aviso div{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#aviso h2{
+    margin: 0;
 }
 
 #corpo{
