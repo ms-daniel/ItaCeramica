@@ -6,17 +6,20 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+  }
 
 /*todo o "nav" do site*/
 header{
     background: linear-gradient(225deg, rgb(0,38,58) 80%, rgb(255,255,255) 20%);
     box-shadow: 0px 1px 2px black;
-    flex-direction: column;
     width: 100%;
-    display: flex;
-    flex-direction: row;
     margin-bottom: 0;
     margin-right: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .ladoDireito{
@@ -31,8 +34,7 @@ header{
 
 #divBusca{
     width: 50%;
-    height: 32px;
-    box-sizing: border-box;
+    height: 40px;
     color: rgb(34, 32, 32);
     text-align: left;
     border: 1px solid rgb(238, 238, 240);
@@ -50,18 +52,25 @@ header{
     font-size: 90%;
     border: none;
     height: auto;
-    width: 90%;
+    width: 92%;
     margin: 0px;
 }
 
 #botaoBuscar{
+    align-items: center;
+    justify-content: center;
     border-radius: 0px 8px 8px 0px;
     padding: 0;
     background-color: rgb(65, 160, 23);
-    width: 10%;
+    width: 8%;
     height: 100%;
     margin: 0%;
-    font-size: 80%;
+}
+
+#botaoBuscar img{
+    width: 50%;
+    height: auto;
+    margin: 0;
 }
 
 #botaoBuscar:hover{
@@ -143,6 +152,10 @@ nav a:hover{
     flex-direction: column;
 }
 
+#corpo{
+    box-sizing: border-box;
+}
+
 #tituloPrincipal{
     width: 100%;
     text-align: center;
@@ -166,14 +179,16 @@ nav a:hover{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 0 10% 0 10%;
 }
-
-
 
 .produtos a{
     color: black;
     text-decoration: none;
-    width: 20%;
+    width: 150px;
+    height: auto;
     border: 1px solid rgb(100, 100, 100);
     background-color: white;
     border-bottom: #41A017 3px solid;
@@ -228,9 +243,15 @@ nav a:hover{
 }
 
 #preco{
+    display: flex;
+    flex-wrap: wrap;
     background: rgb(248, 204, 28);
-    margin: 10px 0 0 0;
+    margin: 0;
     padding-left: 2%;
+    
+}
+
+#preco p{
     color: rgb(180, 42, 39);
     font-size: 14pt;
 }
@@ -241,6 +262,7 @@ nav a:hover{
 }
 #precoAntigo{
     text-decoration: line-through;
+    margin: 0;
 }
 
 #paginaProduto{
@@ -339,8 +361,6 @@ nav a:hover{
     box-shadow: 0px 0px 2px black;
 }
 
-
-
 footer{
     text-align: center;
     width: 100%;
@@ -352,4 +372,61 @@ footer{
     margin: 0;
     padding: 0.02px;
     border-top: 1px solid black;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    header{
+        background: rgb(0,38,58);
+        box-shadow: 0px 1px 2px black;
+        width: 100%;
+        margin-bottom: 0;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #logo{
+        width: 30%;
+        align-self: center;
+        margin-top: 15px;
+    }
+    #logo img{
+
+    }
+
+    .ladoDireito{
+        width: 100%;
+    }
+    #divBusca{
+        width: 70%;
+    }
+  }
+
+@media only screen and (max-width: 654px) {
+    #linhaInferior p,span{
+        font-size: 12pt;
+    }
+    
+    #linhaInferior span{
+        color: #346319;
+    }
 }
